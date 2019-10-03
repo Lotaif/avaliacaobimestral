@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <object data="menu.html" height="180px" width="1700px"></object>
+    <meta charset="UTF-8">
+
+    <style>
+        .aligned {
+            margin-left: 200px;
+        }
+        
+        .form-buttons {
+            width: 150px;
+            height: 80px;
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+    </style>
+
+</head>
+
+
+<body style="margin-left: 100px; margin-right: 100px; margin-top:10px">
+
+    <p style="float:right; font-size: 16px; margin-right: 50px"><b>Lista de Livros  ></b> Cadastro de Livros</p><br><br>
+    <h2 style="text-align: center; display: block"><u>Cadastro de Livros</u></h2>
+
+    <form style="margin-top:50px; margin-left: 10px">
+        <label style="line-height: 90px">Título* :<input name="title" required class="aligned" type="text" style="width: 900px; height: 30px;"></label><br>
+        <label style="line-height: 90px">Autor* :<input name="author-name" required class="aligned" type="text" style="width: 300px; height: 30px;"> 
+        <input name="autor-surname" type="text" style="width: 500px; height: 30px; margin-left: 100px"></label><br>
+        <label style="line-height: 90px">Origem :
+            <input type="radio" name="gender" value="national" class="aligned" checked> Nacional
+            <input type="radio" name="gender" value="international" style="margin-left: 100px"> Internacional<br></label>
+        <label style="line-height: 90px">Gênero* :   
+        <input class="aligned" list="gender" name="gender" required>
+        <datalist id="gender">
+                <option value="Romance">
+                <option value="Aventura">
+                <option value="Ficção">
+                <option value="Científico">
+        </datalist></label><br>
+        <label style="line-height: 90px">Publicação* : <input class="aligned" type="date" name="publish-date" required></label><br>
+        <input type="submit" class="form-buttons">
+        <a href="index.html"><button type="button" class="form-buttons">Cancelar</button></a>
+    </form>
+
+</body>
+
+</html>
